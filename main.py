@@ -48,6 +48,19 @@ class Striler:
     def update(self, yFac):
         self.posy = self.posy + self.speed * yFac
         
+        #Restricting the striker to be below top surface of screen 
+        if self.posy <= 0:
+            self.posy = 0
+        #Restrictiong again the striker to be above the bottom of the screen 
+        elif self.posy + self.height >= HEIGHT:
+            self.posy = HEIGHT - self.height 
+        #Updating the rect with new values 
+        self.danRect = (self.posx, self.posy, self.width, self.height)
+        
+    #rendering the score on the screen
+    def displayScore():
+        pass
+        
 
 
 
