@@ -58,8 +58,15 @@ class Striler:
         self.danRect = (self.posx, self.posy, self.width, self.height)
         
     #rendering the score on the screen
-    def displayScore():
-        pass
+    def displayScore(self, text, score, x, y, color):
+        text = font20.render(text+ str(score), True, color)
+        textRect = text.get_rect()
+        textRect.center = (x, y)
+        
+        screen.bilt(text, textRect)
+        
+    def rect(self):
+        return self.danRect
         
 
 
