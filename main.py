@@ -123,18 +123,24 @@ class Ball:
     def hit(self):
         self.xFac *= -1
         
+    
+    #Game Manager. 
+    def main():
+        running = True
+        
+        
 
 
 
 
 
 #Declaring my boolean that checks if pypong is runnig.
-keepGameRunnig = True
+#keepGameRunnig = True
 
-while keepGameRunnig:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            keepGameRunnig = False
+#while keepGameRunnig:
+    #for event in pygame.event.get():
+        #if event.type == pygame.QUIT:
+            #keepGameRunnig = False
 
 
 
